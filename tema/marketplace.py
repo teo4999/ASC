@@ -131,7 +131,7 @@ class Marketplace:
 
         cart = self.carts.pop(c_id, None)
 
-        for p in cart:
-            print("{} bought {}".format(currentThread().getName(), p))
+        for prod in cart:
+            print("{} bought {}".format(currentThread().getName(), prod))
 
         return cart
