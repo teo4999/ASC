@@ -37,4 +37,4 @@ Resurse utilizate
 
 Git
 -
-* https://github.com/teo4999/Python/tree/main/Tema1ASC
+* https://github.com/teo4999/ASC
