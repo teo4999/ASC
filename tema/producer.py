@@ -40,14 +40,14 @@ class Producer(Thread):
 
     def run(self):
         while 1:
-            for list in self.products:
+            for p_list in self.products:
                 num_of_p = 0
 
-                while num_of_p < list[1]:
-                    ret = self.marketplace.publish(str(self.p_id), list[0])
+                while num_of_p < p_list[1]:
+                    ret = self.marketplace.publish(str(self.p_id), p_list[0])
 
                     if ret:
-                        time.sleep(list[2])
+                        time.sleep(p_list[2])
                         num_of_p += 1
                     else:
                         time.sleep(self.republish_wait_time)
